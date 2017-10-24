@@ -6,9 +6,10 @@ from time import sleep
 
 #爬百度百科
 def main():
-    url="https://baike.baidu.com"
-    header={}
-    i=1
+    url="http://www.baidu.com"
+    data = urllib.request.urlopen(url).read()
+    data = data.decode('UTF-8')
+    print("%s",data)
 
 if __name__ == '__main__':
     main()
