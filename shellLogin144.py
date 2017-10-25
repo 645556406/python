@@ -1,20 +1,16 @@
-from urllib import request
-import os
+import requests
+import re
+import urllib
+import random
+from time import sleep
 
-#爬百度
+#爬百度百科
 def main():
-    url="http://www.baidu.com/"
-    data = request.urlopen(url).read()
-    #data = data.decode('UTF-8')
-    data=str(data)
-    print(type(data))
+    url="http://www.baidu.com"
+    data = urllib.request.urlopen(url).read()
+    data = data.decode('UTF-8')
     print("%s",data)
-    wBaiDu=open('1.txt','a+')
-    wBaiDu.write(data+'\n')
-    wBaiDu.close()
 
 if __name__ == '__main__':
     main()
-
-
 
