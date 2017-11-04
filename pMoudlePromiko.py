@@ -43,15 +43,15 @@ class sshRemote(object):
 
 
 
-link183=sshRemote('cd /usr/local/nginx/;pwd','192.168.1.152',22,'root','sls123')
+link183=sshRemote('cd /usr/local/nginx/;pwd','192.168.1.152',22,'root','123123')
 link183.sshLink()
 link183=link183=sshRemote('ls','192.168.1.152',22,'root','sls123')
 link183.sshLink()
 """
-link183=link183=sshRemote('source /etc/profile','192.168.1.152',22,'root','sls123')
+link183=link183=sshRemote('source /etc/profile','192.168.1.152',22,'root','123123')
 link183.sshLink()
 """
-link183=link183=sshRemote('ifconfig','192.168.1.152',22,'root','sls123')
+link183=link183=sshRemote('ifconfig','192.168.1.152',22,'root','123123')
 link183.sshLink()
 
 
